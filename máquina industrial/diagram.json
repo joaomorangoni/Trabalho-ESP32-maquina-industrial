@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "author": "joaomorangoni",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "ledGreen",
+      "top": -80.4,
+      "left": 176.6,
+      "attrs": { "color": "green" }
+    },
+    { "type": "wokwi-led", "id": "ledRed", "top": -70, "left": 220, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnStart",
+      "top": 120,
+      "left": -220,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnFail",
+      "top": 180,
+      "left": -220,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnReset",
+      "top": 240,
+      "left": -220,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "potLimite",
+      "top": -154.9,
+      "left": -105.8,
+      "attrs": { "value": "50" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "potTemp",
+      "top": -135.7,
+      "left": -211.4,
+      "attrs": { "value": "25" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -18.9, "left": 282.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "ledGreen:A", "esp:22", "green", [ "v0" ] ],
+    [ "ledGreen:C", "esp:GND.1", "black", [ "v0" ] ],
+    [ "ledRed:A", "esp:23", "red", [ "v0" ] ],
+    [ "ledRed:C", "esp:GND.1", "black", [ "v0" ] ],
+    [ "btnStart:1.l", "esp:GND.1", "black", [ "v-27.4", "h210.4", "v48" ] ],
+    [ "btnStart:2.l", "esp:21", "green", [ "v-56", "h335.2", "v-19.2" ] ],
+    [ "btnFail:1.l", "esp:GND.1", "black", [ "v-20.2", "h224.61" ] ],
+    [ "btnFail:2.l", "esp:19", "red", [ "v18.4", "h320.76" ] ],
+    [ "btnReset:1.l", "esp:GND.1", "black", [ "v-13", "h224.61" ] ],
+    [ "btnReset:2.l", "esp:18", "gray", [ "v25.6", "h320.76" ] ],
+    [ "potLimite:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "potLimite:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "potLimite:SIG", "esp:34", "blue", [ "v0" ] ],
+    [ "potTemp:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "potTemp:GND", "esp:GND.1", "black", [ "v163.2", "h163.2", "v57.6" ] ],
+    [ "potTemp:SIG", "esp:35", "blue", [ "v0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "h-28.8", "v-67.2" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "dht1:SDA", "esp:12", "yellow", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
