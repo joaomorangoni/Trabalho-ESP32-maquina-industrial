@@ -15,8 +15,8 @@
     {
       "type": "wokwi-pushbutton",
       "id": "btnStart",
-      "top": 120,
-      "left": -220,
+      "top": 111.8,
+      "left": -230.4,
       "attrs": { "color": "green" }
     },
     {
@@ -54,11 +54,8 @@
     [ "ledGreen:C", "esp:GND.1", "black", [ "v0" ] ],
     [ "ledRed:A", "esp:23", "red", [ "v0" ] ],
     [ "ledRed:C", "esp:GND.1", "black", [ "v0" ] ],
-    [ "btnStart:1.l", "esp:GND.1", "black", [ "v-27.4", "h210.4", "v48" ] ],
-    [ "btnStart:2.l", "esp:21", "green", [ "v-56", "h335.2", "v-19.2" ] ],
-    [ "btnFail:1.l", "esp:GND.1", "black", [ "v-20.2", "h224.61" ] ],
+    [ "btnStart:2.l", "esp:21", "green", [ "h-28.8", "v-56", "h364", "v-11" ] ],
     [ "btnFail:2.l", "esp:19", "red", [ "v18.4", "h320.76" ] ],
-    [ "btnReset:1.l", "esp:GND.1", "black", [ "v-13", "h224.61" ] ],
     [ "btnReset:2.l", "esp:18", "gray", [ "v25.6", "h320.76" ] ],
     [ "potLimite:VCC", "esp:3V3", "red", [ "v0" ] ],
     [ "potLimite:GND", "esp:GND.1", "black", [ "v0" ] ],
@@ -68,7 +65,10 @@
     [ "potTemp:SIG", "esp:35", "blue", [ "v0" ] ],
     [ "dht1:VCC", "esp:3V3", "red", [ "h-28.8", "v-67.2" ] ],
     [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ],
-    [ "dht1:SDA", "esp:12", "yellow", [ "v0" ] ]
+    [ "dht1:SDA", "esp:12", "yellow", [ "v0" ] ],
+    [ "esp:GND.1", "btnStart:1.r", "black", [ "h-148.61", "v-28.8" ] ],
+    [ "esp:GND.1", "btnFail:1.r", "black", [ "h0" ] ],
+    [ "esp:GND.1", "btnReset:1.r", "black", [ "h-110.21", "v99.4" ] ]
   ],
   "dependencies": {}
 }
