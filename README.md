@@ -8,4 +8,3 @@ membros:
 - João Vitor Xavier de Carvalho - 570633
 - Victor Deggerone Gomes - 569518
 
-Tivemos problemas com o serial que pode ou não estar funcionando, o simulador no computador da faculdade não estava rodando o monitor serial.
